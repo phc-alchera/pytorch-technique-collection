@@ -7,7 +7,8 @@
 """
 
 import os
-from utilities.parser_manager import build_parser
+from Utils.parser_manager import build_parser
+from Utils.data import DatasetDownloader
 print(os.path.dirname(os.path.realpath(__file__)))
 
 if __name__== '__main__':
