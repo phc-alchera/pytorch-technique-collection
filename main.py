@@ -1,3 +1,11 @@
+"""
+    Author : Park Hee Chan
+    Github : github.com/phc-alchera/pytorch-technique-collection
+    Created: 2021-07-12
+
+    My Pytorch Project in Alchera Inc.
+"""
+
 import os
 from utilities.parser_manager import build_parser
 print(os.path.dirname(os.path.realpath(__file__)))
