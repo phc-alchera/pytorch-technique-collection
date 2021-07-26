@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import torch
 from torch.utils.data import Dataset
 from torch.utils.data.dataset import IterableDataset
 from torchvision import datasets
@@ -33,11 +34,17 @@ from torchvision.io import read_image
 
 
 # Dataset Downloader
-def DatasetDownloader(args, transformer) -> Dataset:
+# args parameter: dataset name, batch_size, shuffle, num_worker
+# torchvision_dataset = ['CIRFAR10', 'CIFAR100', 'MNIST', 'VOC', 'CelebA', 'CocoDetection', 'Cityscapes']
+def DatasetDownloader(args, former) -> [Dataset, dataloader]:
     torchvision_dataset = ['CIRFAR10', 'CIFAR100', 'MNIST', 'VOC', 'CelebA', 'CocoDetection', 'Cityscapes']
     assert args.data in torchvision_dataset
-    dataset = torchvision.datasets.__dict__[args.data]
+    exe_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'DATA')
+    if os.path.exists(exe_path) is False:
+        os.mkdir(exe_path)
 
-    NotImplemented
-    return 0
+    dataset = torchvision.datasets.__dict__[args.data](root=exe_path, train=args.train, download=True, transforme=former)
 
+    dataloader = torch.utils.data.DataLoader(dataset=dataset, batch_size=args.batch_size, shuffle=args.shuffle, num_workers=args.num_worker, pin_memory=True)
+    
+    return dataset, dataloader
