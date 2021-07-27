@@ -10,4 +10,9 @@ def build_parser():
     # lr
     # optimizer
 
+    # data_definition
+    # args parameter: dataset name, batch_size, shuffle, num_worker
+    parser.add_argument('-data', typ=str)
+    parser.add_argument('-batch_size', typ=int)
+    parser.add_argument('-num_worker', typ=int)
 
