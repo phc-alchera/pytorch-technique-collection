@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4249bc37-1478-4d94-bac1-b95a72a12c77" name="Default Changelist" comment="pytorch technique code will be updated..!!!">
+    <list default="true" id="4249bc37-1478-4d94-bac1-b95a72a12c77" name="Default Changelist" comment="dataset load update&#10;I'll be more update for automated code structure.">
+      <change afterPath="$PROJECT_DIR$/Utils/optimizer_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pytorch-technique-collection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pytorch-technique-collection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/data_definition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/data_definition.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/data_definition.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/parser_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/parser_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627289559057</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dataset load update&#10;I'll be more update for automated code structure.">
+      <created>1627350594423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627350594423</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,17 +132,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pytorch technique code will be updated..!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="pytorch technique code will be updated..!!!" />
+    <MESSAGE value="dataset load update&#10;I'll be more update for automated code structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="dataset load update&#10;I'll be more update for automated code structure." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Utils/data_definition.py</url>
-          <line>52</line>
+          <line>54</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

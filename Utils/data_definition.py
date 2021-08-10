@@ -43,6 +43,8 @@ def load(args, mode: str, **kwargs) -> [Dataset, DataLoader]:
         return dataset_downloader(args, kwargs["former"])
     elif mode == 'db' and "former" in kwargs.keys():
         NotImplemented
+    elif mode == 'ICDAR 2015' and "former" in kwargs.keys():
+        NotImplemented
     NotImplemented
 
 
@@ -68,7 +70,7 @@ def dataset_downloader(args, former: str) -> [Dataset, DataLoader]:
 def simulate():
     class Test:
         def __init__(self):
-            self.data = 'CIFAR10'
+            self.data = 'COCO'
             self.train = True
             self.batch_size = 2
             self.shuffle = False
